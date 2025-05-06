@@ -6,10 +6,6 @@
 
 [![Build badge]][Build] [![crates.io badge]][crates.io]
 
-[Build]: https://github.com/trchopan/firebase-auth/actions/workflows/rust.yml
-[Build badge]: https://github.com/trchopan/firebase-auth/actions/workflows/rust.yml/badge.svg
-[crates.io]: https://crates.io/crates/firebase-auth
-[crates.io badge]: https://img.shields.io/crates/v/firebase-auth.svg?color=%23B48723
 
 ## Note
 
@@ -43,8 +39,6 @@ axum = "0.8"
 
 ## Actix
 
-[https://github.com/trchopan/firebase-auth/tree/main/examples/actix_basic.rs](https://github.com/trchopan/firebase-auth/tree/main/examples/actix_basic.rs)
-
 ```rust
 use actix_web::{get, middleware::Logger, web::Data, App, HttpServer, Responder};
 use firebase_auth::{FirebaseAuth, FirebaseUser};
@@ -77,7 +71,6 @@ async fn main() -> std::io::Result<()> {
 
 ## Axum
 
-[https://github.com/trchopan/firebase-auth/tree/main/examples/axum_basic.rs](https://github.com/trchopan/firebase-auth/tree/main/examples/axum_basic.rs)
 
 ```rust
 use axum::{routing::get, Router};
@@ -111,15 +104,11 @@ async fn main() {
 
 ## More complete example with Axum, SQLite and slqx
 
-[examples/axum-sqlite](https://github.com/trchopan/firebase-auth/tree/main/examples/axum-sqlite/src/main.rs)
 
 This is more real world application with Firebase Authentication and SQLite as database.
 
 ## Using Custom Claims
 
-[examples/actix-web-custom-claims](https://github.com/trchopan/firebase-auth/blob/main/examples/actix-custom-claims/src/main.rs)
-
-[examples/axum-custom-claims](https://github.com/trchopan/firebase-auth/blob/main/examples/axum-custom-claims/src/main.rs)
 
 Custom claims are provided as defined `FirebaseUser` struct and use actix or axum trait to implement the extraction from the request.
 
